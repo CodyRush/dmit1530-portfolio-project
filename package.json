@@ -22,7 +22,9 @@
     "url": "https://github.com/dominait/kelvinbridge/issues"
   },
   "homepage": "https://github.com/dominait/kelvinbridge#readme",
-  "dependencies": {},
+  "dependencies": {
+    "reset.scss": "^1.0.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.0"
   }
