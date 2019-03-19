@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik:500');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
 h2 {
     color: $main-dark;
     font-size: 2rem;
     font-weight: lighter;
     margin-bottom: 2rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4rem;
+}
+
+.bold-head {
+    font-weight: bold;
+    font-size: 1.7rem;
 }

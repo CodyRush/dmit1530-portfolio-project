@@ -24,6 +24,7 @@
   "homepage": "https://github.com/dominait/kelvinbridge#readme",
   "dependencies": {
     "reboot.css": "^1.0.4",
+    "reset.css": "^2.0.2",
     "reset.scss": "^1.0.0"
   },
   "devDependencies": {
