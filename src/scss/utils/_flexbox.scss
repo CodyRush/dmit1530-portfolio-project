@@ -11,3 +11,26 @@
     align-items: center;
     text-align: center;
 }
+
+.flex-single-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-two-med {
+    @media (min-width:780px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        li {
+            flex: calc(100% / 2);
+            text-align: center;
+        }
+
+        
+    }
+}

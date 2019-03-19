@@ -44,8 +44,8 @@ nav {
     background: $alt-light;
     position: fixed;
     width: 100%;
-    top: -55vh;
-    transition: all 0.3s ease-in-out;
+    top: -100rem;
+    transition: all 0.5s ease-in-out;
 
     h2 {
         margin-top: 1.5rem;
@@ -58,7 +58,7 @@ nav {
     }
 
     li:hover {
-        background: $alt-dark;
+        background: $main-dark;
     }
 
     .menu-button {
@@ -121,6 +121,19 @@ nav {
         background: $alt-dark;
         color: #fff;
     }
+
+    @media(min-width: 780px) {
+        .cta-container {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            margin: 0 auto;
+
+            li {
+                width: 16.75rem;
+            }
+        }
+    } 
 }
 
 .skills-section {
@@ -137,6 +150,23 @@ nav {
     img {
     width: 9rem;
     margin-bottom: 3rem;
+    }
+
+    p {
+        display: none;
+    }
+
+    @media(min-width: 780px) {
+        img {
+            height: 7.5rem;
+        }
+
+        p {
+            display: block;
+            padding: 0 5.25rem;
+            margin-bottom: 2rem;
+            color: #c1bdbd;
+        }
     }
     
 }
@@ -165,6 +195,15 @@ nav {
 
         img {
             width: 4rem;
+        }
+    }
+
+    @media(min-width: 780px) {
+        background: $alt-dark;
+        color: white;
+
+        h2 {
+            color: #fff;
         }
     }
 }

@@ -244,6 +244,44 @@ ul {
   text-align: center;
 }
 
+.flex-single-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 780px) {
+  .flex-two-med {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .flex-two-med li {
+    -webkit-box-flex: calc(100% / 2);
+        -ms-flex: calc(100% / 2);
+            flex: calc(100% / 2);
+    text-align: center;
+  }
+}
+
 .head-center {
   text-align: center;
   margin-bottom: 2rem;
@@ -298,9 +336,9 @@ nav ul svg {
   background: #04b6e1;
   position: fixed;
   width: 100%;
-  top: -55vh;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  top: -100rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .mobile-menu h2 {
@@ -314,7 +352,7 @@ nav ul svg {
 }
 
 .mobile-menu li:hover {
-  background: #646466;
+  background: #1b1b1b;
 }
 
 .mobile-menu .menu-button {
@@ -376,6 +414,22 @@ nav ul svg {
   color: #fff;
 }
 
+@media (min-width: 780px) {
+  .title-screen .cta-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .title-screen .cta-container li {
+    width: 16.75rem;
+  }
+}
+
 .skills-section {
   padding: 2rem 0;
 }
@@ -391,6 +445,22 @@ nav ul svg {
 .skills-section img {
   width: 9rem;
   margin-bottom: 3rem;
+}
+
+.skills-section p {
+  display: none;
+}
+
+@media (min-width: 780px) {
+  .skills-section img {
+    height: 7.5rem;
+  }
+  .skills-section p {
+    display: block;
+    padding: 0 5.25rem;
+    margin-bottom: 2rem;
+    color: #c1bdbd;
+  }
 }
 
 .find-me {
@@ -426,6 +496,16 @@ nav ul svg {
 
 .find-me .platforms img {
   width: 4rem;
+}
+
+@media (min-width: 780px) {
+  .find-me {
+    background: #646466;
+    color: white;
+  }
+  .find-me h2 {
+    color: #fff;
+  }
 }
 
 .card-container-1 .card {

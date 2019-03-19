@@ -1,4 +1,6 @@
+
 let toggleNavStatus = false;
+let buttonClicked = false;
 
 let toggleNav = function() {
     let getNav = document.querySelector(".mobile-menu");
@@ -10,9 +12,15 @@ let toggleNav = function() {
     }
 
     else if (toggleNavStatus === true) {
-        getNav.style.top = "-55vh";
+        getNav.style.top = "-100rem";
 
         toggleNavStatus = false;
     }
 
+}
+
+let closeMenu = function() {
+    let grabNav = document.querySelector(".mobile-menu");
+
+    grabNav.style.top = "-100rem";
 }

@@ -29,14 +29,14 @@
             </ul>
         </nav>
 
-        <aside class="mobile-menu">
+        <aside class="mobile-menu" id="mobile-menu">
             <h2 class="head-center">My Portfolio</h2>
             <ul class="flex-column-single">
-                <li class="button"><a href="#" class="menu-button">Technology</a></li>
-                <li class="button"><a href="#" class="menu-button">Social Media</a></li>
-                <li class="button"><a href="#" class="menu-button">Work Experience</a></li>
-                <li class="button"><a href="#" class="menu-button">Education</a></li>
-                <li class="button"><a href="#" class="menu-button">Contact Me</a></li>
+                <li class="button"><a href="#tech" class="menu-button" onclick="closeMenu()">Technology</a></li>
+                <li class="button"><a href="#find" class="menu-button" onclick="closeMenu()">Social Media</a></li>
+                <li class="button"><a href="#work" class="menu-button" onclick="closeMenu()">Work Experience</a></li>
+                <li class="button"><a href="#school" class="menu-button" onclick="closeMenu()">Education</a></li>
+                <li class="button"><a href="#contact" class="menu-button" onclick="closeMenu()">Contact Me</a></li>
             </ul>
         </aside>
     
@@ -46,7 +46,7 @@
             <p>#Front End Dev | #React </p>
     
             <div class="call-to-action">
-                <ul>
+                <ul class="cta-container">
                     <li class="primary-button button">New Projects</li>
                     <li class="secondary-button button">Awards</li>
                 </ul>
@@ -63,31 +63,35 @@
 
 
     <main>
-        <section class="skills-section">
+        <section id="tech" class="skills-section">
             <header class="head-center">
                 <h2>Technology Stack</h2>
             </header>
-            <ul class="flex-column-single">
+            <ul class="flex-column-single flex-two-med">
                 <li>
                     <h3 class="head-center bold-head">HTML5</h3>
                     <img src="img/html5-badge.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
                 <li>
                     <h3 class="head-center bold-head">CSS3</h3>
                     <img src="img/css3-badge.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
                 <li>
                     <h3 class="head-center bold-head">JavaScript</h3>
                     <img src="img/js-badge.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
                 <li>
                     <h3 class="head-center bold-head">React JS</h3>
                     <img src="img/react-badge.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
             </ul>
         </section>
 
-        <section class="find-me">
+        <section class="find-me" id="find">
             <header class="head-center">
                 <h2>Where To Find Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate veniam voluptatem totam
@@ -114,7 +118,7 @@
             </ul>
         </section>
 
-        <section class="work-experience">
+        <section class="work-experience" id="work">
             <header class="head-center">
                 <h2>Work Experience</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo amet dolores placeat maxime
@@ -144,7 +148,7 @@
             </ul>
         </section>
 
-        <section class="education">
+        <section class="education" id="school">
 
             <header class="head-center">
                 <h2>Education</h2>
@@ -179,7 +183,7 @@
 
         </section>
 
-        <section class="contact-form">
+        <section class="contact-form" id="contact">
 
             <header class="head-center">
                 <h2>Get In Touch</h2>
