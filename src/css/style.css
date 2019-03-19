@@ -47,7 +47,7 @@
 }
 
 body {
-  background: #353541;
+  background: #fff;
 }
 
 nav ul {
@@ -231,5 +231,85 @@ nav ul svg {
 
 .education header h2 {
   margin-bottom: 2rem;
+}
+
+.contact-form {
+  background: #fff;
+  margin: 5rem 0 2.5rem;
+}
+
+.contact-form header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.25rem;
+}
+
+.contact-form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.contact-form form label {
+  margin-left: 1.2rem;
+  font-style: italic;
+  font-weight: lighter;
+  color: #6f6f6f;
+}
+
+.contact-form form input[type=text],
+.contact-form form input[type=email],
+.contact-form form textarea {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form form button {
+  background: #fb6470;
+  width: 18.75rem;
+  font-size: 1.37rem;
+  padding: 0.5rem 0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.main-footer {
+  margin-bottom: 2.5rem;
+}
+
+.main-footer p {
+  font-size: 0.75rem;
+  color: #585858;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.main-footer .alt-foot-text {
+  color: #8d8d8d;
 }
 /*# sourceMappingURL=style.css.map */
