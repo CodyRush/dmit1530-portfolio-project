@@ -41,7 +41,10 @@
 
 
 body {
-    // background: #353541;
+    background: #353541;
+}
+
+main {
     background: #fff;
 }
 
@@ -213,7 +216,7 @@ nav {
 
 .contact-form {
     background: #fff;
-    margin: 5rem 0 2.5rem;
+    margin: 5rem 0 0;
 
     header {
         text-align: center;
@@ -263,7 +266,8 @@ nav {
 }
 
 .main-footer {
-    margin-bottom: 2.5rem;
+    padding: 4rem 0 2rem;
+    background: #fff;
     p {
         font-size: 0.75rem;
         color: #585858;

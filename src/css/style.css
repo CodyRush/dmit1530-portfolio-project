@@ -47,6 +47,10 @@
 }
 
 body {
+  background: #353541;
+}
+
+main {
   background: #fff;
 }
 
@@ -235,7 +239,7 @@ nav ul svg {
 
 .contact-form {
   background: #fff;
-  margin: 5rem 0 2.5rem;
+  margin: 5rem 0 0;
 }
 
 .contact-form header {
@@ -299,7 +303,8 @@ nav ul svg {
 }
 
 .main-footer {
-  margin-bottom: 2.5rem;
+  padding: 4rem 0 2rem;
+  background: #fff;
 }
 
 .main-footer p {
