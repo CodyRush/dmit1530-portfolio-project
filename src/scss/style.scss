@@ -40,6 +40,34 @@ nav {
     }
 }
 
+.mobile-menu {
+    background: $alt-light;
+    position: fixed;
+    width: 100%;
+    top: -55vh;
+    transition: all 0.3s ease-in-out;
+
+    h2 {
+        margin-top: 1.5rem;
+    }
+
+    li {
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    li:hover {
+        background: $alt-dark;
+    }
+
+    .menu-button {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
 .title-screen {
     .profile-picture {
         width: 9rem;

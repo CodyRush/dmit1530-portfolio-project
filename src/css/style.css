@@ -294,6 +294,35 @@ nav ul svg {
   width: 2.5rem;
 }
 
+.mobile-menu {
+  background: #04b6e1;
+  position: fixed;
+  width: 100%;
+  top: -55vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu h2 {
+  margin-top: 1.5rem;
+}
+
+.mobile-menu li {
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu li:hover {
+  background: #646466;
+}
+
+.mobile-menu .menu-button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 .title-screen .profile-picture {
   width: 9rem;
   height: 9rem;
