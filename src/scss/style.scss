@@ -1,3 +1,89 @@
-ul {
-    list-style: none;
+.bold-text {
+    font-weight: bold;
+}
+
+.svg-badge {
+    width: 9rem;
+}
+
+
+body {
+    background: #353541;
+}
+
+nav {
+    ul {
+        padding: 0;
+        margin: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        list-style: none;
+
+        li {
+            font-size: 0.875rem;
+            color: #b8b8bd;
+            line-height: 0;
+            text-align: center;
+        }
+
+        svg {
+            width: 2.5rem;
+        }
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    .profile-picture {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        background: white;
+        margin-bottom: 3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 0.4;
+        color: #a1a1a5;
+        margin-bottom: 3rem;
+    }
+
+    .call-to-action {
+        margin-bottom: 3rem;
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .primary-button {
+        background: #fb6470;
+        width: 50%;
+        line-height: 3.5rem;
+        margin: 0 auto 0.6rem;
+        font-size: 1.37rem;
+        color: #fff;
+        border-radius: 10px;
+
+    }
+
+    .secondary-button {
+        background: #32bec7;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 3.5rem;
+        font-size: 1.37rem;
+        color: #fff;
+        border-radius: 10px;
+    }
 }
