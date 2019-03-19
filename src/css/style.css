@@ -117,6 +117,49 @@ header .secondary-button {
 
 .skills-section ul img {
   width: 10rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.find-me {
+  background: #fff;
+  text-align: center;
+  color: #999;
+}
+
+.find-me h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.find-me p {
+  margin-bottom: 2rem;
+}
+
+.find-me .platforms {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.find-me .platforms h3 {
+  color: #bcc9ce;
+}
+
+.find-me .platforms li {
+  -webkit-box-flex: calc(100% / 2);
+      -ms-flex: calc(100% / 2);
+          flex: calc(100% / 2);
+}
+
+.find-me .platforms img {
+  width: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -106,7 +106,43 @@ header {
 
         img {
             width: 10rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.find-me {
+    background: #fff;
+    text-align: center;
+    color: #999;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .platforms {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        h3 {
+            color: #bcc9ce;
+        }
+
+        li {
+            flex: calc(100% / 2);
+        }
+
+        img {
+            width: 4rem;
         }
     }
 }
