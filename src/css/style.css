@@ -249,6 +249,10 @@ ul {
   margin-bottom: 2rem;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .bold-text {
   font-weight: bold;
 }
@@ -324,6 +328,10 @@ nav ul svg {
   border-radius: 10px;
 }
 
+.title-screen .primary-button:hover {
+  background: #04b6e1;
+}
+
 .title-screen .secondary-button {
   background: #fff;
   width: 50%;
@@ -332,6 +340,11 @@ nav ul svg {
   font-size: 1.37rem;
   color: #1b1b1b;
   border-radius: 10px;
+}
+
+.title-screen .secondary-button:hover {
+  background: #646466;
+  color: #fff;
 }
 
 .skills-section {
@@ -369,6 +382,10 @@ nav ul svg {
 
 .find-me .platforms h3 {
   color: #bcc9ce;
+}
+
+.find-me .platforms h3:hover {
+  color: #0183ce;
 }
 
 .find-me .platforms li {
@@ -521,6 +538,11 @@ nav ul svg {
   color: white;
   border: none;
   border-radius: 10px;
+}
+
+.contact-form form button:hover {
+  background: #1b1b1b;
+  color: #0183ce;
 }
 
 .main-footer {

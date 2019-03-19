@@ -73,7 +73,10 @@ nav {
         font-size: 1.37rem;
         color: #fff;
         border-radius: 10px;
+    }
 
+    .primary-button:hover {
+        background: $alt-light;
     }
 
     .secondary-button {
@@ -84,6 +87,11 @@ nav {
         font-size: 1.37rem;
         color: $main-dark;
         border-radius: 10px;
+    }
+
+    .secondary-button:hover {
+        background: $alt-dark;
+        color: #fff;
     }
 }
 
@@ -116,6 +124,10 @@ nav {
 
         h3 {
             color: #bcc9ce;
+        }
+
+        h3:hover {
+            color: $main-light;
         }
 
         li {
@@ -251,6 +263,11 @@ nav {
             color: white;
             border: none;
             border-radius: 10px;
+        }
+
+        button:hover {
+            background: $main-dark;
+            color: $main-light;
         }
     }
 }
