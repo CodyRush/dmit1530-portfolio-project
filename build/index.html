@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="heading-style">
+        <nav>
+            <ul class="icon-view">
+                <li class="button" onclick="toggleNav()"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="#b8b8bd"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg></li>
+                <li>
+                    <p class="bold-text">rush_cody@hotmail.com</p>
+                    <p>403 550 4335</p>
+                </li>
+            </ul>
+
+            <ul class="list-view hidden">
+                <li class="button"><a href="#tech">Technology</a></li>
+                <li class="button"><a href="#find">Social Media</a></li>
+                <li class="button"><a href="#work">Work Experience</a></li>
+                <li class="button"><a href="#school">Education</a></li>
+                <li class="button"><a href="#contact">Contact Me</a></li>
+                <li>
+                    <p class="bold-text">rush_cody@hotmail.com</p>
+                    <p>403 550 4335</p>
+                </li>
+            </ul>
+        </nav>
+
+        <aside class="mobile-menu" id="mobile-menu">
+            <h2 class="head-center">My Portfolio</h2>
+            <ul class="flex-column-single">
+                <li class="button"><a href="#tech" class="menu-button" onclick="closeMenu()">Technology</a></li>
+                <li class="button"><a href="#find" class="menu-button" onclick="closeMenu()">Social Media</a></li>
+                <li class="button"><a href="#work" class="menu-button" onclick="closeMenu()">Work Experience</a></li>
+                <li class="button"><a href="#school" class="menu-button" onclick="closeMenu()">Education</a></li>
+                <li class="button"><a href="#contact" class="menu-button" onclick="closeMenu()">Contact Me</a></li>
+            </ul>
+        </aside>
+
+        <header class="title-screen head-center">
+            <img src="img/portfolio-picture.svg" alt="" class="profile-picture">
+            <div class="seperator"></div>
+            <h1>Cody Rush</h1>
+            <p>#Front End Dev | #React </p>
+
+            <div class="call-to-action">
+                <ul class="cta-container">
+                    <li class="primary-button button">New Projects</li>
+                    <li class="secondary-button button">Awards</li>
+                </ul>
+            </div>
+
+            <svg class="svg-badge" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 125 74">
+                <title>gulp-netlify-badge</title>
+                <image width="125" height="74"
+                    xlink:href="data:image/png;base64,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" />
+            </svg>
+        </header>
+    </div>
+
+
+    <main>
+        <section id="tech" class="skills-section">
+            <header class="head-center">
+                <h2>Technology Stack</h2>
+                <div class="seperator"></div>
+            </header>
+            <ul class="flex-column-single flex-two-med flex-1-lg">
+                <li>
+                    <h3 class="head-center bold-head">HTML5</h3>
+                    <img src="img/html5-badge.png" alt="">
+                    <p>Implement semantic markup for every project I work on including the latest HTML5 tags.</p>
+                </li>
+                <li>
+                    <h3 class="head-center bold-head">CSS3</h3>
+                    <img src="img/css3-badge.png" alt="">
+                    <p>Use CSS to its full potential, including animations, flexbox, grid and SCSS Preprocessor.</p>
+                </li>
+                <li>
+                    <h3 class="head-center bold-head">JavaScript</h3>
+                    <img src="img/js-badge.png" alt="">
+                    <p>Using the latest ES6 syntax as well as Object Oriented Programming principles to take brochure websites to the next level.</p>
+                </li>
+                <li>
+                    <h3 class="head-center bold-head">React JS</h3>
+                    <img src="img/react-badge.png" alt="">
+                    <p>Currently learning to take full advantage of this powerful JavaScript framework to build state of the art UI and UX.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="find-me" id="find">
+            <header class="head-center">
+                <h2>Where To Find Me</h2>
+                <div class="seperator"></div>
+                <p>I am always availible for consultation on projects as well as just to talk about anything including technology, sports and video games. Click the links.</p>
+            </header>
+            <ul class="platforms flex-row-2 flex-single-row">
+                <li class="button">
+                    <img src="img/github-brands.svg" alt="">
+                    <h3>Github</h3>
+                </li>
+                <li class="button">
+                    <img src="img/linkedin-in-brands.svg" alt="">
+                    <h3>LinkedIn</h3>
+                </li>
+                <li class="button">
+                    <img src="img/twitter-brands.svg" alt="">
+                    <h3>Twitter</h3>
+                </li>
+                <li class="button">
+                    <img src="img/discord-brands.svg" alt="">
+                    <h3>Discord</h3>
+                </li>
+            </ul>
+        </section>
+
+        <section class="work-experience" id="work">
+            <header class="head-center">
+                <h2>Work Experience</h2>
+                <div class="seperator"></div>
+                <p>I have a varied history as I worked as a licensed Heavy Duty Mechanic right out of highschool. This gives me a different perspective on the world as well as allows me to approach problems in a unique way.</p>
+            </header>
+            <ul class="flex-column-single card-container-1">
+                <li class="card">
+                    <h3>Freelance Web Developer</h3>
+                    <p class="time-frame">Jan 2019 - Current</p>
+                    <p class="summary">Search for clients, Send quotes as well as build personal projects for friends and family.</p>
+                </li>
+                <li class="card">
+                    <h3>Groeneveld CPL Systems</h3>
+                    <p class="time-frame">May 2017 - June 2018</p>
+                    <p class="summary">Travel around this beautiful province of Alberta to service the Groeneveld systems on a range of offroad, mining and on road equipment.</p>
+                </li>
+                <li class="card">
+                    <h3>Calfrac Well Services</h3>
+                    <p class="time-frame">November 2013 - February 2016</p>
+                    <p class="summary">Learn the Heavy Duty Mechanic trade from great journeyman.</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <section class="education" id="school">
+
+            <header class="head-center">
+                <h2>Education</h2>
+                <div class="seperator"></div>
+                <p>These are the learning institutes I have attended. My learning does not stop there as I am always reading, researching and tinkering with new technology.</p>
+            </header>
+
+            <ul class="card-container-2 flex-column-single">
+                <li class="alt-card">
+                    <h3>Northern Alberta Institute of Technology</h3>
+                    <p class="degree">DMIT - Web Design and Development</p>
+                    <p class="time-frame">Sept 2018 - Current</p>
+                    <p class="summary">Learning web development with a focus in full-stack JavaScript inclduing React and Node.js.</p>
+                </li>
+                <li class="alt-card">
+                    <h3>Red Deer College</h3>
+                    <p class="degree">Heavy Duty Mechanic Apprenticeship</p>
+                    <p class="time-frame">April 2015 - November 2016</p>
+                    <p class="summary">2 month intervals for Heavy Equipment Technician training in between work experience.</p>
+                </li>
+                <li class="alt-card">
+                    <h3>Lacombe Composite Highschool</h3>
+                    <p class="degree">Highschool Diploma</p>
+                    <p class="time-frame">Sept 2011 - June 2014</p>
+                    <p class="summary">Highschool was a great learning experience but I would never want to do it again.</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="contact-form" id="contact">
+
+            <header class="head-center">
+                <h2>Get In Touch</h2>
+                <div class="seperator"></div>
+            </header>
+
+            <form action="">
+                <div>
+                    <label for="name">Name*</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="message">Message*</label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </div>
+                <button class="button">get in touch</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Copyright Cody Rush &copy;2019, All Rights Reserved</p>
+        <p class="alt-foot-text">rush_cody@hotmail.com</p>
+        <p class="alt-foot-text">(403) - 550 - 4335</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
