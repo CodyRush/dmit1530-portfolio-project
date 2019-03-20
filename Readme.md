@@ -1,7 +1,7 @@
 
-# Kelvinbridge
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8170f8d7-ac5b-438c-9ee2-4f4ac155eaff/deploy-status)](https://app.netlify.com/sites/kelvinbridge/deploys)  
-A simple workflow for building modern static websites. Automated build task that with gulp.js. Local development server runs your site from the build folder. Build process includes CSS minification, autoprefixing and selector optimization. Repo contains a boilerplate for deploying your site live to Netlify for either a production build or deploymnet build.
+# Cody Rush Assignment 2
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8170f8d7-ac5b-438c-9ee2-4f4ac155eaff/deploy-status)](https://codyrush-assignment-2.netlify.com/)  
+A portfolio site based on the KelvinBridge framework provided by Jim Foley in the DMIT 1530 class. Includes SCSS, Gulp and NPM as well as a custom JavaScript function built for the mobile menu.
 
  
 
