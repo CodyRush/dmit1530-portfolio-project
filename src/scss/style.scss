@@ -38,6 +38,12 @@ nav {
             width: 2.5rem;
         }
     }
+
+    @media(min-width: 780px) {
+        p {
+            font-size: 1.1rem;
+        }
+    }
 }
 
 .mobile-menu {
@@ -165,7 +171,7 @@ nav {
             display: block;
             padding: 0 5.25rem;
             margin-bottom: 2rem;
-            color: #c1bdbd;
+            color: $main-dark;
         }
     }
     
@@ -176,10 +182,6 @@ nav {
     padding: 2.25rem;
 
     .platforms {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-
         h3 {
             color: #bcc9ce;
         }
@@ -204,6 +206,11 @@ nav {
 
         h2 {
             color: #fff;
+        }
+
+        p {
+            width: 85%;
+            margin: 0 auto;
         }
     }
 }
@@ -244,6 +251,11 @@ nav {
             color: #fff;
         }
     }
+
+    @media(min-width: 780px) {
+        max-width: 63rem;
+        margin: 0 auto;
+    }
 }
 
 .card-container-2 {
@@ -277,6 +289,11 @@ nav {
     li:nth-child(even) {
         align-self: flex-end;
     }
+
+    @media(min-width: 780px) {
+        max-width: 63rem;
+        margin: 0 auto;
+    }
 }
 
 .work-experience {
@@ -286,11 +303,16 @@ nav {
 .education {
     padding: 2.25rem;
     background: #f4f1f4;
+
+    p {
+        margin-bottom: 4rem;
+    }
 }
 
 .contact-form {
     background: #fff;
-    margin: 5rem 0 0;
+    margin: 5rem auto 0;
+    max-width: 28rem;
 
     form {
         display: flex;

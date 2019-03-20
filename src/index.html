@@ -15,13 +15,25 @@
     <div class="heading-style">
         <nav>
             <ul class="icon-view">
-                <li class="button" onclick="toggleNav()"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-                        class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512">
+                <li class="button" onclick="toggleNav()"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path fill="#b8b8bd"
                             d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
                         </path>
                     </svg></li>
+                <li>
+                    <p class="bold-text">rush_cody@hotmail.com</p>
+                    <p>403 550 4335</p>
+                </li>
+            </ul>
+
+            <ul class="list-view hidden">
+                <li class="button"><a href="#tech">Technology</a></li>
+                <li class="button"><a href="#find">Social Media</a></li>
+                <li class="button"><a href="#work">Work Experience</a></li>
+                <li class="button"><a href="#school">Education</a></li>
+                <li class="button"><a href="#contact">Contact Me</a></li>
                 <li>
                     <p class="bold-text">rush_cody@hotmail.com</p>
                     <p>403 550 4335</p>
@@ -39,19 +51,20 @@
                 <li class="button"><a href="#contact" class="menu-button" onclick="closeMenu()">Contact Me</a></li>
             </ul>
         </aside>
-    
+
         <header class="title-screen head-center">
             <img src="img/portfolio-picture.svg" alt="" class="profile-picture">
+            <div class="seperator"></div>
             <h1>Cody Rush</h1>
             <p>#Front End Dev | #React </p>
-    
+
             <div class="call-to-action">
                 <ul class="cta-container">
                     <li class="primary-button button">New Projects</li>
                     <li class="secondary-button button">Awards</li>
                 </ul>
             </div>
-    
+
             <svg class="svg-badge" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 125 74">
                 <title>gulp-netlify-badge</title>
@@ -66,27 +79,32 @@
         <section id="tech" class="skills-section">
             <header class="head-center">
                 <h2>Technology Stack</h2>
+                <div class="seperator"></div>
             </header>
-            <ul class="flex-column-single flex-two-med">
+            <ul class="flex-column-single flex-two-med flex-1-lg">
                 <li>
                     <h3 class="head-center bold-head">HTML5</h3>
                     <img src="img/html5-badge.png" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis
+                        similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
                 <li>
                     <h3 class="head-center bold-head">CSS3</h3>
                     <img src="img/css3-badge.png" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis
+                        similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
                 <li>
                     <h3 class="head-center bold-head">JavaScript</h3>
                     <img src="img/js-badge.png" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis
+                        similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
                 <li>
                     <h3 class="head-center bold-head">React JS</h3>
                     <img src="img/react-badge.png" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi pariatur corrupti quo facilis
+                        similique excepturi impedit debitis aperiam, dolor magni, atque cumque, consectetur at quos.</p>
                 </li>
             </ul>
         </section>
@@ -94,11 +112,13 @@
         <section class="find-me" id="find">
             <header class="head-center">
                 <h2>Where To Find Me</h2>
+                <div class="seperator"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate veniam voluptatem totam
-                    temporibus provident perspiciatis voluptates dolorum aliquid itaque aperiam a saepe accusamus inventore,
+                    temporibus provident perspiciatis voluptates dolorum aliquid itaque aperiam a saepe accusamus
+                    inventore,
                     nulla nesciunt sit hic vero?</p>
             </header>
-            <ul class="platforms flex-row-2">
+            <ul class="platforms flex-row-2 flex-single-row">
                 <li class="button">
                     <img src="img/github-brands.svg" alt="">
                     <h3>Github</h3>
@@ -121,6 +141,7 @@
         <section class="work-experience" id="work">
             <header class="head-center">
                 <h2>Work Experience</h2>
+                <div class="seperator"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo amet dolores placeat maxime
                     quidem soluta harum fugiat maiores deleniti veritatis cupiditate eum distinctio, rerum est. Nisi
                     sint pariatur nam.</p>
@@ -152,6 +173,7 @@
 
             <header class="head-center">
                 <h2>Education</h2>
+                <div class="seperator"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem enim ratione temporibus qui?
                     Repudiandae ullam totam nesciunt, dicta consequatur laborum voluptates quas, exercitationem labore
                     repellat eum nostrum ea molestiae.</p>
@@ -187,6 +209,7 @@
 
             <header class="head-center">
                 <h2>Get In Touch</h2>
+                <div class="seperator"></div>
             </header>
 
             <form action="">
@@ -196,7 +219,7 @@
                 </div>
                 <div>
                     <label for="email">Email*</label>
-                    <input type="email" name="email" id="email">      
+                    <input type="email" name="email" id="email">
                 </div>
                 <div>
                     <label for="message">Message*</label>
@@ -206,7 +229,7 @@
             </form>
         </section>
     </main>
-    
+
     <footer class="main-footer">
         <p>Copyright Cody Rush &copy;2019, All Rights Reserved</p>
         <p class="alt-foot-text">rush_cody@hotmail.com</p>

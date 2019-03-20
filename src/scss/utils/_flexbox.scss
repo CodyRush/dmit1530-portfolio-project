@@ -9,13 +9,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     text-align: center;
 }
 
 .flex-single-row {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @media(min-width:780px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 .flex-two-med {
@@ -32,5 +37,19 @@
         }
 
         
+    }
+}
+
+.flex-1-lg {
+    @media(min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        li {
+            text-align: center;
+        }
     }
 }

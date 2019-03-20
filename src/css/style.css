@@ -241,19 +241,29 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
 
-.flex-single-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 780px) {
+  .flex-single-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 780px) {
@@ -282,13 +292,91 @@ ul {
   }
 }
 
+@media (min-width: 1200px) {
+  .flex-1-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .flex-1-lg li {
+    text-align: center;
+  }
+}
+
 .head-center {
   text-align: center;
   margin-bottom: 2rem;
 }
 
+@media (min-width: 780px) {
+  .head-center {
+    max-width: 63rem;
+    margin: 2rem auto 4rem;
+  }
+}
+
 .button:hover {
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .icon-view {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .list-view li {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .list-view li:first-of-type {
+    margin-left: 1rem;
+  }
+  .list-view li:last-of-type {
+    margin-left: 1rem;
+  }
+  .list-view a {
+    text-decoration: none;
+    color: #b8b8bd;
+  }
+  .list-view a:hover {
+    border-bottom: 1px solid #0183ce;
+  }
+}
+
+.seperator {
+  content: "";
+  width: 10rem;
+  border-bottom: 2px solid #0183ce;
+  margin: 0 auto 2rem;
 }
 
 .bold-text {
@@ -330,6 +418,12 @@ nav ul li {
 
 nav ul svg {
   width: 2.5rem;
+}
+
+@media (min-width: 780px) {
+  nav p {
+    font-size: 1.1rem;
+  }
 }
 
 .mobile-menu {
@@ -459,24 +553,13 @@ nav ul svg {
     display: block;
     padding: 0 5.25rem;
     margin-bottom: 2rem;
-    color: #c1bdbd;
+    color: #1b1b1b;
   }
 }
 
 .find-me {
   color: #999;
   padding: 2.25rem;
-}
-
-.find-me .platforms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .find-me .platforms h3 {
@@ -505,6 +588,10 @@ nav ul svg {
   }
   .find-me h2 {
     color: #fff;
+  }
+  .find-me p {
+    width: 85%;
+    margin: 0 auto;
   }
 }
 
@@ -546,6 +633,13 @@ nav ul svg {
   color: #fff;
 }
 
+@media (min-width: 780px) {
+  .card-container-1 {
+    max-width: 63rem;
+    margin: 0 auto;
+  }
+}
+
 .card-container-2 .alt-card {
   max-width: 26rem;
   color: #0183ce;
@@ -580,6 +674,13 @@ nav ul svg {
       align-self: flex-end;
 }
 
+@media (min-width: 780px) {
+  .card-container-2 {
+    max-width: 63rem;
+    margin: 0 auto;
+  }
+}
+
 .work-experience {
   padding: 2.25rem;
 }
@@ -589,9 +690,14 @@ nav ul svg {
   background: #f4f1f4;
 }
 
+.education p {
+  margin-bottom: 4rem;
+}
+
 .contact-form {
   background: #fff;
-  margin: 5rem 0 0;
+  margin: 5rem auto 0;
+  max-width: 28rem;
 }
 
 .contact-form form {

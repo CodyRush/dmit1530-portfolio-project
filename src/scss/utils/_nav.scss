@@ -1,0 +1,39 @@
+.hidden {
+    display: none;
+}
+
+.icon-view {
+    @media (min-width: 1200px) {
+        display: none;
+    } 
+}
+
+.list-view {
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        li:first-of-type {
+            margin-left: 1rem;
+        }
+
+        li:last-of-type {
+            margin-left: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #b8b8bd;
+        }
+
+        a:hover {
+            border-bottom: 1px solid $main-light;
+        }
+    }
+}
